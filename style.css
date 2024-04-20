@@ -81,7 +81,7 @@ ul li a {
   background-image: url('./src/assets/images/desktop/image-header.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: center bottom;
   height: 50vh;
   width: 100vw;
 }
@@ -161,7 +161,7 @@ h1 {
     background-image: url('./src/assets/images/mobile/image-header.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: center bottom;
     height: 50vh;
     width: 100vw;
 
@@ -309,49 +309,78 @@ h1 {
 
   /* standalone h3 in main */
   main h3:nth-of-type(1) {
+    margin-top: 5vh;
     text-align: center;
+    font-family: var(--ff-fraunces);
+    font-size: var(--fs-300);
+    font-weight: var(--fw-600);
+    color: var(--primary-dark-moderate-cyan);
+    font-stretch: condensed;
   }
 
   /* testimonial section */
 
+
   .section_testimonials .article_grid_layout_ctn {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: 1fr 2fr 0.5fr;
     gap: 0px 0px;
     grid-auto-flow: row;
+    padding: 13vw;
   }
 
   /* for all images inside testimonials */
   .section_testimonials .article_grid_layout_ctn .testimonial_image {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
-  }
-
-  .section_testimonials .article_grid_layout_ctn:nth-of-type(1) .testimonial_image {
-    background-image: url('./src/assets/images/image-emily.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+  }
+
+  /* specific images */
+  .section_testimonials .article_grid_layout_ctn:nth-of-type(1) .testimonial_image {
+    background-image: url('./src/assets/images/image-emily.jpg');
   }
 
   .section_testimonials .article_grid_layout_ctn:nth-of-type(2) .testimonial_image {
     background-image: url('./src/assets/images/image-thomas.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
   }
 
   .section_testimonials .article_grid_layout_ctn:nth-of-type(3) .testimonial_image {
     background-image: url('./src/assets/images/image-jennie.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
   }
 
+  .section_testimonials p {
+    align-content: center;
+    text-align: center;
+    font-family: var(--ff-barlow);
+    font-size: var(--fs-300);
+    font-weight: var(--fw-600);
+    color: var(--primary-very-dark-grayish-blue);
+    line-height: 1.5;
+  }
 
+  .section_testimonials h4 {
+    align-content: center;
 
+    text-align: center;
+    font-family: var(--ff-fraunces);
+    font-size: var(--fs-300);
+    font-weight: var(--fw-700);
+    color: var(--primary-very-dark-desaturated-blue);
+  }
+
+  .section_testimonials h5 {
+    text-align: center;
+    align-content: start;
+    font-family: var(--ff-barlow);
+    font-size: var(--fs-200);
+    font-weight: var(--fw-600);
+    color: var(--primary-dark-moderate-cyan);
+  }
 
   /* end of media queries  */
 }
