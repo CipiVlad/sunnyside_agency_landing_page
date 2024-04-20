@@ -2,6 +2,8 @@ const hamburger = document.getElementById('hamburger')
 let menu = document.getElementById('menu')
 
 window.onload = () => {
+
+
     if (window.innerWidth < 430) {
         menu.style.display = 'none'
     }

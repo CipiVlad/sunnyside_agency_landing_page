@@ -172,6 +172,14 @@ ul li a {
     flex-direction: column-reverse;
   }
 
+  .section_flex_ctn:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+
+  .section_flex_ctn:nth-child(3) {
+    flex-direction: column-reverse;
+  }
+
   section:nth-child(1) .section_image {
     background-image: url('./src/assets/images/mobile/image-transform.jpg');
     background-repeat: no-repeat;
@@ -196,7 +204,7 @@ ul li a {
     display: grid;
     justify-content: center;
     place-items: center;
-    padding: 8vh;
+    padding: 8vh 0;
     gap: 25px;
 
   }
