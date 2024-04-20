@@ -436,5 +436,59 @@ h1 {
     color: var(--primary-dark-moderate-cyan);
   }
 
+  /* grid gallery section */
+  .gallery_grid_ctn {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "milk"
+      "orange"
+      "coan"
+      "sugar"
+    ;
+
+    width: 100vw;
+    height: 50vh;
+  }
+
+  .gallery_child:nth-child(1) {
+    grid-area: "milk";
+    background-image: url('./src/assets/images/mobile/image-gallery-milkbottles.jpg');
+    /* stretch the image to fit the container */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  .gallery_child {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  .gallery_child:nth-child(2) {
+    grid-area: "orange";
+    background-image: url('./src/assets/images/mobile/image-gallery-orange.jpg');
+  }
+
+  .gallery_child:nth-child(3) {
+    grid-area: "coan";
+    background-image: url('./src/assets/images/mobile/image-gallery-cone.jpg');
+  }
+
+  .gallery_child:nth-child(4) {
+    grid-area: "sugar";
+    background-image: url('./src/assets/images/mobile/image-gallery-sugar-cubes.jpg');
+  }
+
+
   /* end of media queries  */
 }
