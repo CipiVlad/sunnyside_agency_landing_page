@@ -2,8 +2,12 @@ const hamburger = document.getElementById('hamburger')
 let menu = document.getElementById('menu')
 
 window.onload = () => {
-    menu.style.display = 'none'
+    if (window.innerWidth < 430) {
+        menu.style.display = 'none'
+    }
 }
+
+
 
 hamburger.addEventListener('click', () => {
 
