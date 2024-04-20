@@ -298,6 +298,10 @@ ul li a {
   /* testimonial section */
 
 
+  .section_testimonials {
+    display: block;
+  }
+
   .section_testimonials .article_grid_layout_ctn {
     display: grid;
     grid-template-columns: 1fr;
