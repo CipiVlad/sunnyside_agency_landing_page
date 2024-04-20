@@ -167,19 +167,69 @@ h1 {
 
   }
 
-  .onMobile_flex {
-    /* display: none; */
+  .orange_hero_bg .nav_flex_cnt {
+    display: flex;
+    gap: 50%;
+    align-items: center;
+    padding: 2vh 0;
+  }
+
+  /* ######################################################## */
+  /* this class is to be added and made visible dynamically */
+
+
+  .orange_hero_bg .nav_flex_cnt .onMobile_flex {
+
+    /* if hamburger off: set display none */
+    display: none;
+
+
+
+    /* onclick uncommend the following lines */
+
+    /* background-color: var(--primary-white);
+    display: block;
+    width: 300px;
+    height: 300px;
     position: absolute;
     top: 240px;
     left: 200px;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
   }
 
-  .nav_flex_cnt {
+  .orange_hero_bg .nav_flex_cnt .onMobile_flex .arrow .nav_flex_cnt {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2vh 0;
+  }
+
+  .orange_hero_bg .nav_flex_cnt .onMobile_flex li {
+    text-align: center;
+    margin: 3vh 0;
+  }
+
+  .orange_hero_bg .nav_flex_cnt .onMobile_flex li a {
+    color: var(--primary-very-dark-grayish-blue);
+  }
+
+  .orange_hero_bg .nav_flex_cnt .onMobile_flex li:nth-of-type(4) a {
+    color: var(--primary-very-dark-desaturated-blue);
+    background-color: var(--primary-yeloow);
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-family: var(--ff-fraunces);
+    font-size: var(--fs-200);
+    font-weight: var(--fw-900);
+  }
+
+  /* end of added class */
+  /* ######################################################## */
+
+
+
+  .nav_flex_cnt svg:nth-child(2) {
+    display: block;
   }
 
   h1 {
@@ -193,6 +243,10 @@ h1 {
   /* .arrow {
     display: block;
     text-align: center;
+  } */
+
+  /* .orange_hero_bg .nav_flex_cnt .onDesktop_flex {
+    display: none;
   } */
 
 
