@@ -55,12 +55,32 @@
 }
 
 
+/* GENERALS */
+a {
+  text-decoration: none;
+  font-family: var(--ff-barlow);
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  line-height: 1.5;
+  color: var();
+}
+
+
+
+
 /* Desktop */
 /* #app {} */
 
 
 /*  MEDIA QUERIES */
 @media screen and (max-width: 430px) {
+
+  /* header */
   .orange_hero_bg {
     background-image: url('./src/assets/images/mobile/image-header.jpg');
     background-repeat: no-repeat;
@@ -68,14 +88,15 @@
     background-position: center center;
     height: 50vh;
     width: 100vw;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
 
   }
 
   .onMobile_flex {
-    display: none;
+    /* display: none; */
+    position: absolute;
+    top: 240px;
+    left: 200px;
+    transform: translate(-50%, -50%);
   }
 
   .nav_flex_cnt {
@@ -83,6 +104,26 @@
     justify-content: space-between;
     align-items: center;
     padding: 2vh 0;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 2.3rem;
+    font-family: var(--ff-fraunces);
+    color: var(--primary-white);
+  }
+
+  .arrow {
+    display: block;
+    text-align: center;
+  }
+
+
+  /* section 1 & 2 */
+
+  .section_flex_ctn {
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   section:nth-child(1) .section_image {
@@ -94,6 +135,7 @@
     width: 100vw;
   }
 
+
   section:nth-child(2) .section_image {
     background-image: url('./src/assets/images/mobile/image-stand-out.jpg');
     background-repeat: no-repeat;
@@ -102,6 +144,43 @@
     height: 50vh;
     width: 100vw;
   }
+
+
+  .section_flex_ctn .section_text {
+    display: grid;
+    justify-content: center;
+    place-items: center;
+    padding: 8vh;
+    gap: 25px;
+
+  }
+
+  .section_flex_ctn .section_text h2 {
+    text-align: center;
+    font-family: var(--font-fraunces);
+    font-size: 1.4em;
+    font-weight: var(--fw-900);
+  }
+
+  .section_flex_ctn .section_text p {
+    text-align: center;
+    font-family: var(--font-barlow);
+    font-size: medium;
+
+  }
+
+  .section_flex_ctn .section_text a {
+    display: block;
+    text-align: center;
+    color: #000;
+    font-family: var(--ff-fraunces);
+    text-decoration-line: underline;
+    text-decoration-color: var(--primary-dark-blue);
+  }
+
+
+  /* section 3 */
+
 
 
 
