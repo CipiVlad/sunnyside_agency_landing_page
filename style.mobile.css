@@ -98,26 +98,18 @@ ul li a {
   }
 
   /* ######################################################## */
-  /* this class is to be added and made visible dynamically */
+  /* this class is visible by clicking on the burger menu */
 
 
   .orange_hero_bg .nav_flex_cnt .onMobile_flex {
-
-    /* if hamburger off: set display none */
-    display: none;
-
-
-
-    /* onclick uncommend the following lines */
-
-    /* background-color: var(--primary-white);
+    background-color: var(--primary-white);
     display: block;
     width: 300px;
     height: 300px;
     position: absolute;
     top: 240px;
     left: 200px;
-    transform: translate(-50%, -50%); */
+    transform: translate(-50%, -50%);
   }
 
   .orange_hero_bg .nav_flex_cnt .onMobile_flex .arrow .nav_flex_cnt {
