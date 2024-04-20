@@ -67,14 +67,88 @@ ul li {
 
 ul li a {
   line-height: 1.5;
-  color: var();
+  /* color: var(); */
 }
 
 
 
 
-/* Desktop */
+/* Desktop screen*/
 /* #app {} */
+
+/* header */
+.orange_hero_bg {
+  background-image: url('./src/assets/images/desktop/image-header.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 50vh;
+  width: 100vw;
+}
+
+.orange_hero_bg .nav_flex_cnt {
+  display: flex;
+  gap: 50%;
+  align-items: center;
+}
+
+
+.nav_flex_cnt svg:nth-child(2) {
+  display: none;
+}
+
+
+.onMobile_flex {
+  display: none;
+}
+
+.onDesktop_flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.onDesktop_flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vh 0;
+  gap: 20px;
+}
+
+.onDesktop_flex li a {
+  color: var(--primary-white);
+  font-weight: var(--fw-600);
+}
+
+.onDesktop_flex li:nth-of-type(4) a {
+  background-color: var(--primary-white);
+  color: var(--primary-dark-blue);
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-family: var(--ff-fraunces);
+  font-size: var(--fs-200);
+}
+
+.onDesktop_flex li:nth-of-type(4) a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: var(--primary-white);
+}
+
+
+h1 {
+  text-align: center;
+  font-size: 2.3rem;
+  font-family: var(--ff-fraunces);
+  color: var(--primary-white);
+}
+
+.orange_hero_bg .arrow {
+  display: block;
+  text-align: center;
+}
+
+
+/* end of desktop screen */
 
 
 /*  MEDIA QUERIES */
@@ -113,10 +187,11 @@ ul li a {
     color: var(--primary-white);
   }
 
-  .arrow {
+  /* change styles for mobile arrow appearance */
+  /* .arrow {
     display: block;
     text-align: center;
-  }
+  } */
 
 
   /* section 1 & 2 */
