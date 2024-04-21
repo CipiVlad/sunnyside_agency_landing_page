@@ -272,8 +272,8 @@ section:nth-child(2) .section_image {
 
 .section_flex_ctn:nth-of-type(2) .section_text {
 
-  width: 48vw;
-  padding: 9vh;
+  width: 47vw;
+  padding: 16vh 12vh;
 }
 
 .section_flex_ctn .section_text h2 {
@@ -320,7 +320,7 @@ section:nth-child(3) .image_bg_ctn {
   width: 50vw;
   display: flex;
   flex-direction: column-reverse;
-  padding-top: 31vh;
+  /* padding-top: 31vh; */
 }
 
 section:nth-child(3) .image_bg_ctn:nth-of-type(1) {
@@ -329,9 +329,9 @@ section:nth-child(3) .image_bg_ctn:nth-of-type(1) {
 
 section:nth-child(3) .image_bg_ctn h3,
 section:nth-child(3) .image_bg_ctn:nth-of-type(1) h3 {
-  color: var(--primary-very-dark-grayish-blue);
+  color: var(--primary-dark-desaturated-cyan);
   font-family: var(--ff-fraunces);
-  font-size: var(--fs-400);
+  font-size: var(--fs-500);
   font-weight: var(--fw-900);
 
 }
@@ -341,9 +341,10 @@ section:nth-child(3) .image_bg_ctn:nth-of-type(1) p {
   text-align: center;
   font-family: var(--font-barlow);
   font-size: var(--fs-200);
-  font-weight: var(--fw-200);
+  font-weight: var(--fw-600);
   line-height: 1.5;
-  padding-top: 4vh;
+  padding: 0 10vw 8vh;
+  color: var(--primary-dark-blue);
 }
 
 .image_bg_ctn {
@@ -352,14 +353,14 @@ section:nth-child(3) .image_bg_ctn:nth-of-type(1) p {
 
 /* standalone h3 in main */
 main h3:nth-of-type(1) {
-  margin-top: 18vh;
+  margin-top: 16vh;
+  margin-bottom: 4vh;
   text-align: center;
   font-family: var(--ff-fraunces);
   font-size: var(--fs-300);
   font-weight: var(--fw-600);
   color: var(--primary-dark-moderate-cyan);
-  font-stretch: condensed;
-  margin-bottom: 8vh;
+  letter-spacing: 7px;
 }
 
 /* section testimonials */
@@ -378,7 +379,7 @@ main h3:nth-of-type(1) {
 }
 
 .section_testimonials .article_grid_layout_ctn p {
-  margin-top: 6vh;
+  margin: 11vh 1vw;
 }
 
 
@@ -403,7 +404,7 @@ main h3:nth-of-type(1) {
   font-size: var(--fs-300);
   font-weight: var(--fw-600);
   color: var(--primary-very-dark-grayish-blue);
-  line-height: 1.5;
+  line-height: 1.7;
 
 }
 
@@ -424,6 +425,7 @@ main h3:nth-of-type(1) {
   font-size: var(--fs-200);
   font-weight: var(--fw-600);
   color: var(--primary-dark-moderate-cyan);
+  margin-bottom: 15vh;
 }
 
 

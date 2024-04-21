@@ -242,12 +242,12 @@ ul li a {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 50vh;
+    /* height: 50vh; */
     width: 100vw;
 
     display: flex;
     flex-direction: column-reverse;
-    padding: 5%;
+    /* padding: 5%; */
   }
 
   section:nth-child(3) .image_bg_ctn:nth-of-type(1) {
@@ -255,7 +255,7 @@ ul li a {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 50vh;
+    /* height: 50vh; */
     width: 100vw;
 
     display: flex;
@@ -264,9 +264,9 @@ ul li a {
 
   section:nth-child(3) .image_bg_ctn h3,
   section:nth-child(3) .image_bg_ctn:nth-of-type(1) h3 {
-    color: var(--primary-very-dark-grayish-blue);
+    color: var(--primary-dark-desaturated-cyan);
     font-family: var(--ff-fraunces);
-    font-size: var(--fs-400);
+    font-size: var(--fs-500);
     font-weight: var(--fw-900);
   }
 
@@ -275,9 +275,10 @@ ul li a {
     text-align: center;
     font-family: var(--font-barlow);
     font-size: var(--fs-200);
-    font-weight: var(--fw-200);
+    font-weight: var(--fw-600);
     line-height: 1.5;
-    padding-top: 4vh;
+    padding: 0 10vw 8vh;
+    color: var(--primary-dark-blue);
 
   }
 
@@ -290,10 +291,9 @@ ul li a {
     margin-top: 5vh;
     text-align: center;
     font-family: var(--ff-fraunces);
-    font-size: var(--fs-300);
+    font-size: var(--fs-200);
     font-weight: var(--fw-600);
     color: var(--primary-dark-moderate-cyan);
-    font-stretch: condensed;
   }
 
   /* testimonial section */
@@ -301,15 +301,11 @@ ul li a {
 
   .section_testimonials {
     display: block;
+    margin: 0;
   }
 
   .section_testimonials .article_grid_layout_ctn {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr 0.5fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    padding: 13vw;
+    padding: 12vw;
   }
 
 
@@ -345,8 +341,8 @@ ul li a {
     color: var(--primary-very-dark-grayish-blue);
     line-height: 1.5;
     margin-top: 6vh;
-    margin-bottom: 9vh;
-    padding: 0 5vw;
+    /* margin-bottom: 9vh;
+    padding: 0 5vw; */
   }
 
   .section_testimonials .article_grid_layout_ctn h4 {
@@ -366,6 +362,7 @@ ul li a {
     font-size: var(--fs-200);
     font-weight: var(--fw-600);
     color: var(--primary-dark-moderate-cyan);
+    margin-bottom: 2vh;
   }
 
   /* grid gallery section */
