@@ -11,7 +11,6 @@ This is a solution to the [Sunnyside agency landing page challenge on Frontend M
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Tags](#tags)
@@ -29,6 +28,7 @@ Users should be able to:
 ### Screenshot
 
 ![](./screenshot.jpg)
+![](./screenshot.jpg)
 
 
 ### Links
@@ -44,45 +44,80 @@ Users should be able to:
 - Semantic HTML5 markup
 - Flexbox
 - CSS Grid
+- vite
+- npm
+- BuilT in Browser: Google Chrome
+- Browser Extension: Perfect Pixel
 
-### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+### Code Snippets
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+  <!-- setction gallery -->
+    <section class="gallery_grid_ctn">
+      <div class="gallery_child"></div>
+      <div class="gallery_child"></div>
+      <div class="gallery_child"></div>
+      <div class="gallery_child"></div>
+    </section>
 ```
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
+ /* grid gallery section */
+  .gallery_grid_ctn {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "milk"
+      "orange"
+      "coan"
+      "sugar"
+    ;
+
+    width: 100vw;
+    height: 50vh;
+  }
 ```
 
 ```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
+// hamburger menu logic
+const hamburger = document.getElementById('hamburger')
+let menu = document.getElementById('menu')
+
+// only show menu on mobile
+window.onload = () => {
+    if (window.innerWidth < 430) {
+        menu.style.display = 'none'
+    }
+}
+
+// toggle menu
+hamburger.addEventListener('click', () => {
+
+    if (menu.style.display === 'none') {
+        menu.style.display = 'block'
+    } else {
+        menu.style.display = 'none'
+    }
+
+})
+
 ```
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
 
 ### Useful resources
 
 - [Scale svg](https://css-tricks.com/scale-svg/) - This helped me for scaling svg inline or as background image.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Website - [Portfolio](https://cipivlad.github.io/myportfoliosite/)
+- Frontend Mentor - [@CipiVlad](https://www.frontendmentor.io/profile/CipiVlad)
+- DEV.to [https://dev.to/cipivlad](https://dev.to/cipivlad)
 
 ## Tags
 
+#css, #grid, #flexbox, #github-pages, #vite
