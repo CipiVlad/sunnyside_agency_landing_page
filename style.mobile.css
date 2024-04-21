@@ -152,6 +152,7 @@ ul li a {
     font-size: 2.3rem;
     font-family: var(--ff-fraunces);
     color: var(--primary-white);
+    padding: 0;
   }
 
   /* change styles for mobile arrow appearance */
@@ -200,10 +201,10 @@ ul li a {
   }
 
 
-  .section_flex_ctn .section_text {
+  .section_flex_ctn:nth-of-type(1) .section_text:nth-of-type(1),
+  .section_flex_ctn:nth-of-type(2) .section_text {
+
     display: grid;
-    justify-content: center;
-    place-items: center;
     padding: 8vh 0;
     gap: 25px;
 
@@ -221,23 +222,23 @@ ul li a {
     font-family: var(--font-barlow);
     font-size: var(--fs-200);
     line-height: 1.5;
-
+    color: var(--primary-very-dark-grayish-blue);
   }
 
   .section_flex_ctn .section_text a {
     display: block;
     text-align: center;
-    color: #000;
+    color: var(--primary-very-dark-desaturated-blue);
     font-family: var(--ff-fraunces);
     text-decoration-line: underline;
-    text-decoration-color: var(--primary-dark-blue);
+    text-decoration-color: var(--primary-yeloow);
   }
 
 
   /* section 3 */
 
   section:nth-child(3) .image_bg_ctn {
-    background-image: url('./src/assets/images/mobile/image-graphic-design.jpg');
+    /* background-image: url('./src/assets/images/mobile/image-graphic-design.jpg'); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -250,7 +251,7 @@ ul li a {
   }
 
   section:nth-child(3) .image_bg_ctn:nth-of-type(1) {
-    background-image: url('./src/assets/images/mobile/image-photography.jpg');
+    /* background-image: url('./src/assets/images/mobile/image-photography.jpg'); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -311,6 +312,7 @@ ul li a {
     padding: 13vw;
   }
 
+
   /* for all images inside testimonials */
   .section_testimonials .article_grid_layout_ctn .testimonial_image {
     width: 80px;
@@ -334,7 +336,7 @@ ul li a {
     background-image: url('./src/assets/images/image-jennie.jpg');
   }
 
-  .section_testimonials p {
+  .section_testimonials .article_grid_layout_ctn p {
     align-content: center;
     text-align: center;
     font-family: var(--ff-barlow);
@@ -342,11 +344,14 @@ ul li a {
     font-weight: var(--fw-600);
     color: var(--primary-very-dark-grayish-blue);
     line-height: 1.5;
+    margin-top: 6vh;
+    margin-bottom: 9vh;
+    padding: 0 5vw;
   }
 
-  .section_testimonials h4 {
+  .section_testimonials .article_grid_layout_ctn h4 {
     align-content: center;
-
+    margin-bottom: 1vh;
     text-align: center;
     font-family: var(--ff-fraunces);
     font-size: var(--fs-300);
