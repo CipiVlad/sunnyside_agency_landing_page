@@ -66,7 +66,6 @@ ul li {
 }
 
 /* Desktop screen*/
-/* #app {} */
 
 /* header */
 .orange_hero_bg {
@@ -215,9 +214,7 @@ h1 {
     opacity: 0;
   }
 
-
 }
-
 
 /* ######################################################## */
 
@@ -241,7 +238,6 @@ section:nth-child(1) .section_image {
   height: auto;
 }
 
-
 section:nth-child(2) .section_image {
   background-image: url('./src/assets/images/desktop/image-stand-out.jpg');
   background-repeat: no-repeat;
@@ -249,7 +245,6 @@ section:nth-child(2) .section_image {
   width: 100%;
   height: auto;
 }
-
 
 .section_flex_ctn:nth-of-type(1) .section_text:nth-of-type(1) {
   width: 100%;
@@ -293,7 +288,6 @@ section:nth-child(2) .section_image {
   letter-spacing: 1px;
 
 }
-
 
 /* ######################################################## */
 /* section 3 */
@@ -376,7 +370,6 @@ section:nth-child(3) .image_bg_ctn:nth-of-type(1) p {
   margin: 16% 1%;
 }
 
-
 /* specific images */
 .section_testimonials .article_grid_layout_ctn:nth-of-type(1) .testimonial_image {
   background-image: url('./src/assets/images/image-emily.jpg');
@@ -390,7 +383,6 @@ section:nth-child(3) .image_bg_ctn:nth-of-type(1) p {
   background-image: url('./src/assets/images/image-jennie.jpg');
 }
 
-
 .section_testimonials p {
   align-content: center;
   text-align: center;
@@ -399,12 +391,10 @@ section:nth-child(3) .image_bg_ctn:nth-of-type(1) p {
   font-weight: var(--fw-600);
   color: var(--primary-very-dark-grayish-blue);
   line-height: 1.7;
-
 }
 
 .section_testimonials h4 {
   align-content: center;
-
   text-align: center;
   font-family: var(--ff-fraunces);
   font-size: var(--fs-300);
@@ -422,19 +412,14 @@ section:nth-child(3) .image_bg_ctn:nth-of-type(1) p {
   margin-bottom: 15vh;
 }
 
-
-
 /* grid gallery section */
 .gallery_grid_ctn {
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  /* grid-template-rows: 1fr 1fr; */
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "milk orange coan sugar"
-  ;
-
+  grid-template-areas: "milk orange coan sugar";
   width: 100vw;
   height: 50vh;
 }
@@ -472,7 +457,6 @@ section:nth-child(3) .image_bg_ctn:nth-of-type(1) p {
   grid-area: "sugar";
   background-image: url('./src/assets/images/mobile/image-gallery-sugar-cubes.jpg');
 }
-
 
 /* footer */
 
@@ -687,7 +671,7 @@ footer {
   }
 
 
-  /* section 3 */
+  /*!! section 3 */
 
   section:nth-child(3) .image_bg_ctn {
     background-image: url('./src/assets/images/mobile/image-graphic-design.jpg');
@@ -696,11 +680,8 @@ footer {
     background-position: top center;
     height: 75vh;
     width: 100%;
-
     display: flex;
     flex-direction: column-reverse;
-    /* padding: 5%; */
-
   }
 
   section:nth-child(3) .image_bg_ctn:nth-of-type(1) {
@@ -708,9 +689,7 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    /* height: 50vh; */
     width: 100vw;
-
     display: flex;
     flex-direction: column-reverse;
   }
@@ -751,7 +730,7 @@ footer {
     color: var(--primary-dark-moderate-cyan);
   }
 
-  /* testimonial section */
+  /** testimonial section */
 
 
   .section_testimonials {
@@ -818,7 +797,7 @@ footer {
     margin-bottom: 2vh;
   }
 
-  /* grid gallery section */
+  /*!! grid gallery section */
   .gallery_grid_ctn {
 
     display: grid;
@@ -871,7 +850,7 @@ footer {
   }
 
 
-  /* footer */
+  /*!! footer */
 
   footer {
     display: grid;
@@ -914,8 +893,6 @@ footer {
     align-items: center;
     gap: 30px;
   }
-
-
 
   /* end of media queries  */
 }

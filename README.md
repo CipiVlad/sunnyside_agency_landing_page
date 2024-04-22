@@ -63,9 +63,17 @@ Users should be able to:
 ```
 
 ```css
+/* match background-image to container size */
+section:nth-child(1) .section_image {
+  background-image: url('./src/assets/images/desktop/image-transform.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+
  /* grid gallery section */
   .gallery_grid_ctn {
-
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
