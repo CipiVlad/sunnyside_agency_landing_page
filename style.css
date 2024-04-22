@@ -308,11 +308,10 @@ section:nth-child(3) .image_bg_ctn {
   background-image: url('./src/assets/images/desktop/image-graphic-design.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 65vh;
-  width: 50vw;
   display: flex;
   flex-direction: column-reverse;
-  /* padding-top: 31vh; */
+  width: 100%;
+  padding-top: 17.4%;
 }
 
 section:nth-child(3) .image_bg_ctn:nth-of-type(1) {
@@ -321,11 +320,13 @@ section:nth-child(3) .image_bg_ctn:nth-of-type(1) {
 
 section:nth-child(3) .image_bg_ctn h3,
 section:nth-child(3) .image_bg_ctn:nth-of-type(1) h3 {
-  color: var(--primary-dark-desaturated-cyan);
+  margin-top: 16vh;
+  /* margin-bottom: 1%; */
+  text-align: center;
   font-family: var(--ff-fraunces);
-  font-size: var(--fs-500);
+  font-size: 1.6rem;
   font-weight: var(--fw-900);
-
+  color: var(--primary-dark-moderate-cyan);
 }
 
 section:nth-child(3) .image_bg_ctn p,
@@ -335,8 +336,8 @@ section:nth-child(3) .image_bg_ctn:nth-of-type(1) p {
   font-size: var(--fs-200);
   font-weight: var(--fw-600);
   line-height: 1.5;
-  padding: 0 10vw 8vh;
-  color: var(--primary-dark-blue);
+  padding: 6% 27%;
+  color: var(--primary-dark-desaturated-cyan);
 }
 
 .image_bg_ctn {
@@ -344,21 +345,22 @@ section:nth-child(3) .image_bg_ctn:nth-of-type(1) p {
 }
 
 /* standalone h3 in main */
-main h3:nth-of-type(1) {
-  margin-top: 16vh;
-  margin-bottom: 4vh;
+
+#client_testimonials_heading {
+  margin-top: 12%;
+  margin-bottom: 5%;
   text-align: center;
   font-family: var(--ff-fraunces);
-  font-size: var(--fs-300);
-  font-weight: var(--fw-600);
+  font-size: var(--fs-400);
+  font-weight: var(--fw-900);
   color: var(--primary-dark-moderate-cyan);
-  letter-spacing: 7px;
+  letter-spacing: 5px;
 }
 
 /* section testimonials */
 .section_testimonials {
   display: flex;
-  margin: 0 18vh;
+  margin: 4vh 11%;
 }
 
 .section_testimonials .article_grid_layout_ctn .testimonial_image {
@@ -371,7 +373,7 @@ main h3:nth-of-type(1) {
 }
 
 .section_testimonials .article_grid_layout_ctn p {
-  margin: 11vh 1vw;
+  margin: 16% 1%;
 }
 
 
@@ -430,8 +432,7 @@ main h3:nth-of-type(1) {
   /* grid-template-rows: 1fr 1fr; */
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas:
-    "milk orange coan sugar"
+  grid-template-areas: "milk orange coan sugar"
   ;
 
   width: 100vw;
@@ -479,8 +480,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
-  grid-template-areas:
-    "logo",
+  grid-template-areas: "logo",
     "nav-links"
     "social-links"
   ;
@@ -815,8 +815,7 @@ footer {
     grid-template-rows: 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-template-areas:
-      "milk"
+    grid-template-areas: "milk"
       "orange"
       "coan"
       "sugar"
@@ -867,8 +866,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
-    grid-template-areas:
-      "logo",
+    grid-template-areas: "logo",
       "nav-links"
       "social-links"
     ;
