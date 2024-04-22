@@ -587,6 +587,15 @@ footer {
     font-weight: var(--fw-900);
   }
 
+  .onMobile_flex span {
+    position: absolute;
+    right: 0px;
+    top: -20px;
+    border-top: 25px solid transparent;
+    border-right: 25px solid #ffffff;
+  }
+
+
   /* end of added class */
   /* ######################################################## */
 
