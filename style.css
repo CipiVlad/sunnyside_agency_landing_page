@@ -484,7 +484,7 @@ footer {
     "nav-links"
     "social-links"
   ;
-  background-color: var(--primary-dark-moderate-cyan);
+  background-color: #90D4C5;
   padding: 50px;
   gap: 30px;
 }
@@ -505,8 +505,9 @@ footer {
 }
 
 .footer_nav a {
-  color: var(--primary-white);
+  color: var(--primary-dark-moderate-cyan);
   text-decoration: none;
+  font-weight: 600;
 }
 
 .footer_nav {
