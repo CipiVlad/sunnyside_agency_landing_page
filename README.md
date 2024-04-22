@@ -27,13 +27,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./public/screenshot.png)
-![](./public/screenshot_mobile.png.jpg)
+![desktop](./public/screenshot.png)
+![mobile](./public/screenshot_mobile.png)
 
 
 ### Links
 
-- Solution URL: [Add live site URL here](https://your-live-site-url.com)
+-  [Solution URL](https://your-live-site-url.com)
 - [Live Site URL](https://sunny-side-landingpage-frontendmentor.netlify.app/)
 
 ## My process
