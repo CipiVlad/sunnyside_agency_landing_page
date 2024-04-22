@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
--  [Solution URL](https://your-live-site-url.com)
+- [Solution URL](https://www.frontendmentor.io/solutions/responsive-landing-page-using-css-grid-vanilla-js-Y61iO5rvLr)
 - [Live Site URL](https://sunny-side-landingpage-frontendmentor.netlify.app/)
 
 ## My process
@@ -46,7 +46,7 @@ Users should be able to:
 - CSS Grid
 - vite
 - npm
-- BuilT in Browser: Google Chrome
+- Tested in Google Chrome
 - Browser Extension: Perfect Pixel
 
 
