@@ -532,7 +532,7 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
-    height: 63vh;
+    height: 67vh;
     width: 100vw;
 
   }
@@ -541,7 +541,7 @@ footer {
     display: flex;
     gap: 50%;
     align-items: center;
-    padding: 2vh;
+    padding: 4vh;
   }
 
   /* ######################################################## */
@@ -630,7 +630,7 @@ footer {
     background-size: cover;
     background-position: center center;
     width: 100%;
-    height: auto;
+    height: 38vh;
     grid-row: 1
   }
 
@@ -645,13 +645,11 @@ footer {
   }
 
 
-  .section_flex_ctn:nth-of-type(1) .section_text:nth-of-type(1),
-  .section_flex_ctn:nth-of-type(2) .section_text {
-
-    display: grid;
-    padding: 8vh 0;
-    gap: 25px;
-
+  .section_flex_ctn:nth-of-type(1) .section_text:nth-of-type(1) {
+    width: 100%;
+    height: auto;
+    padding: 15% 16%;
+    margin: 1vh 0;
   }
 
   .section_flex_ctn .section_text h2 {
@@ -682,16 +680,17 @@ footer {
   /* section 3 */
 
   section:nth-child(3) .image_bg_ctn {
-    /* background-image: url('./src/assets/images/mobile/image-graphic-design.jpg'); */
+    background-image: url('./src/assets/images/mobile/image-graphic-design.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
-    /* height: 50vh; */
-    width: 100vw;
+    background-position: top center;
+    height: 75vh;
+    width: 100%;
 
     display: flex;
     flex-direction: column-reverse;
     /* padding: 5%; */
+
   }
 
   section:nth-child(3) .image_bg_ctn:nth-of-type(1) {
@@ -712,17 +711,19 @@ footer {
     font-family: var(--ff-fraunces);
     font-size: var(--fs-500);
     font-weight: var(--fw-900);
+    margin-bottom: 2vh;
   }
 
   section:nth-child(3) .image_bg_ctn p,
   section:nth-child(3) .image_bg_ctn:nth-of-type(1) p {
     text-align: center;
     font-family: var(--font-barlow);
-    font-size: var(--fs-200);
-    font-weight: var(--fw-600);
+    font-size: var(--fs-300);
+    font-weight: var(--fw-700);
     line-height: 1.5;
     padding: 0 10vw 8vh;
-    color: var(--primary-dark-blue);
+    padding: 4% 2% 17%;
+    color: var(--primary-dark-desaturated-cyan);
 
   }
 
@@ -870,7 +871,7 @@ footer {
       "nav-links"
       "social-links"
     ;
-    background-color: var(--primary-dark-moderate-cyan);
+    background-color: #90D4C5;
     padding: 50px;
     gap: 30px;
   }
@@ -891,8 +892,9 @@ footer {
   }
 
   .footer_nav a {
-    color: var(--primary-white);
+    color: var(--primary-dark-moderate-cyan);
     text-decoration: none;
+    font-weight: var(--fw-600);
   }
 
   .footer_nav {
